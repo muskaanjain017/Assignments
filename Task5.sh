@@ -1,0 +1,1 @@
+stat -c "%U" * | xargs -I {} id -Gn {} | tr ' ' ',' | tr '\n' ',' > output5.tsv && cat output5.tsv
